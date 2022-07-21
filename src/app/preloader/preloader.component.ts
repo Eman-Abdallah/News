@@ -1,3 +1,4 @@
+import { PreloaderService } from './../preloader.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./preloader.component.scss']
 })
 export class PreloaderComponent implements OnInit {
-isLoaded=false
-  constructor() { }
+  loading = this.preLoader.loading$;
+  constructor( private preLoader:PreloaderService) { }
 
   ngOnInit(): void {
-   this.isLoaded=true;
 
 }
 }
