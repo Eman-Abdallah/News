@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md sticky-top " #nav>
+    <div class="container-xl">
+        <a class="navbar-brand d-flex align-items-center" routerLink="home">
+
+            <img src="./assets/image/icon.png" alt="" height="40px">
+            <h3 class="mx-1 fw-bold">{{"NEWS"| translate}}</h3>
+        </a>
+
+
+        <button class="navbar-toggler" (click)="nav.classList.toggle('clicked')" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class=" fa fa-bars "></i>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" #nav>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" routerLink="home" routerLinkActive="active">{{"HOME"| translate}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="about" routerLinkActive="active">{{"ABOUT"| translate}}</a>
+                </li>
+
+                <li class="nav-item mx-1 mt-3">
+                    <button class="btn btn2 border rounded-circle mx-1" (click)="changLang('ar') ">Ar</button>
+                    <button class="btn btn2 border rounded-circle" (click)="changLang('en')">En</button>
+                    <!-- <select class="form-select" aria-label="Default select example">
+                      <option selected value="en" (change)="changLang($event.target.value)"> >ENGLISH</option>
+                      <option value="ar" (change)="changLang('ar')">ARABIC</option>
+
+                    </select> -->
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>

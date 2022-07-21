@@ -1,0 +1,28 @@
+{
+    "NEWS": "NEWS",
+    "HOME": "Home",
+    "ABOUT": "About",
+    "CONTACT-US": "Contact Us",
+    "READ-MORE": "Read More",
+    "HEALTH": {
+        "Category": "Health",
+        "title": "Health Article",
+        "description": "Health, according to the World Health Organization, is a state of complete physical, mental and social well-being and not merely the absence of disease and infirmity A variety of definitions have been used for different purposes over time. Health can be promoted by encouraging healthful activities, such as regular physical exercise and adequate sleep"
+    },
+    "SPORTS": {
+        "Category": "Sport",
+        "title": "Sport Article",
+        "description": "a game, competition, or activity needing physical effort and skill that is played or done according to rules, for enjoyment and/or as a job"
+    },
+    "SCIENCE": {
+        "Category": "Science",
+        "title": "Science Article",
+        "description": "Now in their second year, the 2022 JoVE Science Education & Research Innovation Awards aim to support individuals from the scientific and academic communities who are taking active roles in their institutions to support and accelerate science education and research."
+    },
+    "BUSHINESS": {
+        "Category": "Business",
+        "title": "Business Article",
+        "description": "Get the best Results for Us Business Funding Reviews. Find what you are looking for! 99% Match on Us Business Funding Reviews. Find Here - Free, Private and Secure. The Best Resources. Results & Answers. Always Facts. Privacy Friendly. Unlimited Access."
+    }
+
+}

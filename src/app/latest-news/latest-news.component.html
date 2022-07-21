@@ -1,0 +1,19 @@
+<section id="home-articles" class="py-4 " style="background-color: #eee;">
+    <div class="container-fluid">
+        <h2 class="py-2 text-center">Latest News</h2>
+        <div class="articles-container row  justify-content-center">
+            <article class="col-sm-5 col-lg-4 col-xl-2" style="min-width: 250px;" *ngFor="let article of  latestArticles ; let i=index ">
+                <img src={{article.imgPath}} alt="">
+                <div class="content">
+                    <div class="btn btn1 btn-warning my-2">{{article.catigory}}</div>
+                    <h3>
+                        <a class="title" href="/article.html">{{article.title}}</a>
+                    </h3>
+                    <p class="desc">{{article.desc}}</p>
+                    <a class="read" routerLink="/article" [state]="article">Read More</a>
+                    <p class="date">{{article.date |date}}</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>

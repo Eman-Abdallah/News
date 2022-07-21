@@ -1,0 +1,66 @@
+<swiper [config]="swiperConfig">
+    <ng-template swiperSlide>
+        <div class="showcase-content slide1">
+            <div class="overlay"></div>
+            <div class="row">
+                <div class="col-md-8 show">
+
+                    <div class="bg-warning btn btn1">{{"HEALTH.Category"| translate}}</div>
+                    <h1 class="display-1">{{"HEALTH.title" | translate}}</h1>
+                    <p class="lead">{{"HEALTH.description"| translate}}</p>
+                    <a href="/article.html" class="btn btn2">{{"READ-MORE" | translate}}</a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </ng-template>
+    <ng-template swiperSlide>
+        <div class="showcase-content slide3">
+            <div class="overlay"></div>
+            <div class="row " id="home">
+                <div class="col-md-8 show">
+                    <div class="bg-warning btn btn1">{{"SPORTS.Category"| translate}}</div>
+                    <h1 class="display-1">{{"SPORTS.title" | translate}}</h1>
+                    <p class="lead">{{"SPORTS.description"| translate}}</p>
+                    <a href="/article.html" class="btn btn2">{{"READ-MORE" | translate}}</a>
+                </div>
+            </div>
+
+        </div>
+    </ng-template>
+
+    <ng-template swiperSlide>
+        <div class="showcase-content slide2">
+            <div class="overlay"></div>
+            <div class="row">
+                <div class="col-md-8 show">
+                    <div class="bg-warning btn btn1">{{"BUSHINESS.Category"| translate}}</div>
+                    <h1 class="display-1">{{"BUSHINESS.title" | translate}}</h1>
+                    <p class="lead">{{"BUSHINESS.description" | translate}}</p>
+                    <a href="/article.html" class="btn  btn2">{{"READ-MORE" | translate}}</a>
+                </div>
+            </div>
+
+        </div>
+    </ng-template>
+    <ng-template swiperSlide>
+        <div class="showcase-content slide4">
+            <div class="overlay"></div>
+            <div class="row">
+                <div class="col-md-8 show ">
+                    <div class="bg-warning btn btn1">{{"SCIENCE.Category"| translate}}</div>
+                    <h1 class="display-2"> {{"SCIENCE.title" | translate}}</h1>
+                    <p class="lead">{{"SCIENCE.description" | translate}}</p>
+                    <a href="/article.html" class="btn  btn2">{{"READ-MORE" | translate}}</a>
+                </div>
+            </div>
+
+        </div>
+    </ng-template>
+</swiper>
+
+<app-latest-news></app-latest-news>
+<app-editor-pick></app-editor-pick>
+<app-categories></app-categories>

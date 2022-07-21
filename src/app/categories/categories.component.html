@@ -1,0 +1,129 @@
+<section id="three">
+    <div class="container mt-5 text-center">
+        <h2 class="mt-5">Categories
+        </h2>
+        <p class="lead">
+            These are the categories that you would like to Subscribe and you will receive notifications
+        </p>
+        <div class="grid pb-5">
+            <a class="btn  btn-outline-danger rounded-pill p-3 m-2 " (click)="article('sport')">Sports</a>
+            <a class="btn  btn-outline-danger rounded-pill p-3 m-2" (click)="article('ent')">Entertainment</a>
+            <a class="btn  btn-outline-danger rounded-pill p-3 m-2" (click)="article('science')">Science</a>
+            <a class="btn  btn-outline-danger rounded-pill p-3 m-2" (click)="article('health')">Health</a>
+            <a class="btn  btn-outline-danger rounded-pill p-3 m-2" (click)="article('business')">Business</a>
+            <a class="btn  btn-outline-danger rounded-pill p-3 m-2" (click)="article('Technology')">Technology</a>
+        </div>
+
+
+    </div>
+
+</section>
+
+<section id="sport-articles" class="py-5 px-3 " style="background-color: #eee;" *ngIf="categorySelected==='sport'">
+    <div class="container-fluid">
+        <div class="articles-container row  justify-content-center">
+            <article class="col-sm-4" style="min-width: 250px;" *ngFor="let article of  sportArticles ; let i=index ">
+                <img src={{article.imgPath}} alt="">
+                <div class="content">
+                    <div class="btn btn1 btn-warning my-2">{{article.catigory}}</div>
+                    <h3>
+                        <a class="title" href="/article.html">{{article.title}}</a>
+                    </h3>
+                    <p class="desc">{{article.desc}}</p>
+                    <a class="read">Subscribe</a>
+                    <p class="date">{{article.date |date}}</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="ent-articles" class="py-4 px-3" style="background-color: #eee;" *ngIf="categorySelected==='ent'">
+    <div class="container-fluid">
+        <div class="articles-container row  justify-content-center">
+            <article class="col-sm-4" style="min-width: 250px;" *ngFor="let article of  entArticles ; let i=index ">
+                <img src={{article.imgPath}} alt="">
+                <div class="content">
+                    <div class="btn btn1 btn-warning my-2">{{article.catigory}}</div>
+                    <h3>
+                        <a class="title" href="/article.html">{{article.title}}</a>
+                    </h3>
+                    <p class="desc">{{article.desc}}</p>
+                    <a class="read">Subscribe</a>
+                    <p class="date">{{article.date |date}}</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="health-articles" class="py-4 px-3" style="background-color: #eee;" *ngIf="categorySelected==='health'">
+    <div class="container-fluid">
+        <div class="articles-container row  justify-content-center">
+            <article class="col-sm-4" style="min-width: 250px;" *ngFor="let article of  healthArticles ; let i=index ">
+                <img src={{article.imgPath}} alt="">
+                <div class="content">
+                    <div class="btn btn1 btn-warning my-2">{{article.catigory}}</div>
+                    <h3>
+                        <a class="title" href="/article.html">{{article.title}}</a>
+                    </h3>
+                    <p class="desc">{{article.desc}}</p>
+                    <a class="read">Subscribe</a>
+                    <p class="date">{{article.date |date}}</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="science-articles" class="py-4 px-3" style="background-color: #eee;" *ngIf="categorySelected==='science'">
+    <div class="container-fluid">
+        <div class="articles-container row  justify-content-center">
+            <article class="col-sm-4" style="min-width: 250px;" *ngFor="let article of  scienceArticles ; let i=index ">
+                <img src={{article.imgPath}} alt="">
+                <div class="content">
+                    <div class="btn btn1 btn-warning my-2">{{article.catigory}}</div>
+                    <h3>
+                        <a class="title" href="/article.html">{{article.title}}</a>
+                    </h3>
+                    <p class="desc">{{article.desc}}</p>
+                    <a class="read">Subscribe</a>
+                    <p class="date">{{article.date |date}}</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="business-articles" class="py-4 px-3" style="background-color: #eee;" *ngIf="categorySelected==='business'">
+    <div class="container-fluid">
+        <div class="articles-container row  justify-content-center">
+            <article class="col-sm-4" style="min-width: 250px;" *ngFor="let article of  businessArticles ; let i=index ">
+                <img src={{article.imgPath}} alt="">
+                <div class="content">
+                    <div class="btn btn1 btn-warning my-2">{{article.catigory}}</div>
+                    <h3>
+                        <a class="title" href="/article.html">{{article.title}}</a>
+                    </h3>
+                    <p class="desc">{{article.desc}}</p>
+                    <a class="read">Subscribe</a>
+                    <p class="date">{{article.date |date}}</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="Technology-articles" class="py-4 px-3" style="background-color: #eee;" *ngIf="categorySelected==='Technology'">
+    <div class="container-fluid">
+        <div class="articles-container row  justify-content-center">
+            <article class="col-sm-4" style="min-width: 250px;" *ngFor="let article of  technologyArticles ; let i=index ">
+                <img src={{article.imgPath}} alt="">
+                <div class="content">
+                    <div class="btn btn1 btn-warning my-2">{{article.catigory}}</div>
+                    <h3>
+                        <a class="title" href="/article.html">{{article.title}}</a>
+                    </h3>
+                    <p class="desc">{{article.desc}}</p>
+                    <a class="read">Subscribe</a>
+                    <p class="date">{{article.date |date}}</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
