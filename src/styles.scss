@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~swiper/css/bundle';
+@import '~swiper/css/autoplay';
+@import './themes/scss/global/font';
+@import './themes/scss/global/var';
+@import './themes/scss/componant/header';
+@import './themes/scss/componant/footer';
+@import './themes/scss/pages/home.scss';
+@import './themes/scss/pages/latest-news.scss';
+@import './themes/scss/pages/editoe-picks.scss';
+@import './themes/scss/pages/article.scss';
+@import './themes/scss/pages/about.scss';
+@import './themes/scss/componant/preloader.scss';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+    text-decoration: none;
+}

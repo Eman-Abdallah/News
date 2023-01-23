@@ -1,0 +1,69 @@
+swiper {
+    height: 100vh;
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        color: white;
+    }
+}
+
+.showcase-content {
+    padding-top: 130px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 100%!important;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+        z-index: -1000;
+    }
+    &.slide1 {
+        background-image: url(../../../assets/image/home-banner2-1.jpg);
+    }
+    &.slide2 {
+        background-image: url(../../../assets/image/pexels-photo-3183197.jpeg);
+    }
+    &.slide3 {
+        background-image: url(../../../assets/image/featured.jpg);
+    }
+    &.slide4 {
+        background-image: url(../../../assets/image/AI-1024x576.jpg);
+    }
+    .show {
+        padding-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.active {
+    background-color: $red-color;
+    color: white;
+}
+
+.lead {
+    font-family: "roboto-light"
+}
+
+@media (max-width: 768px) {
+    .showcase-content {
+        padding-top: 100px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 568px) {
+    .show {
+        padding-left: 40px!important;
+        .lead {
+            font-size: 14px;
+        }
+    }
+}
